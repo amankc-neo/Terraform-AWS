@@ -46,7 +46,7 @@ resource "aws_instance" "my_ec2" {
      security_groups = [aws_security_group.allow_traffic.name]
 
      tags = {
-        name = "SecuredInstance-${count.index +1}"
+        Name = "SecuredInstance-${count.index +1}"
             }
 
 }
